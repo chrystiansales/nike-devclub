@@ -81,3 +81,32 @@ p {
     max-width: 500px;
 
 }
+
+
+/* teste */
+.color-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    margin: 10px 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .color-btn:hover {
+    transform: scale(1.1);
+    border-color: #666;
+  }
+
+  /* Cores dos botões */
+  .red { background-color: #c41e3a; }
+  .blue { background-color: #0067a5; }
+  .black { background-color: #2d2d2d; }
+
+  /* Container dos botões */
+  .color-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 8px;
+  }
