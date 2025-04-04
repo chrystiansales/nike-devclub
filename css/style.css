@@ -4,7 +4,7 @@ body {
     background: #ccee66;
     color: white;
     padding: 20px 160px;
-    height: 100vh;   
+    height: 100vh;
     overflow: hidden;
     font-family: "Noto Sans", sans-serif;
 
@@ -12,10 +12,10 @@ body {
 
 body::before {
     content: "";
-    background: #090909;    
+    background: #202020;
     position: absolute;
     top: 0;
-    left: 600px;
+    left: -600px;
     transform: rotate(-70deg);
     width: 100%;
     height: 120%;
@@ -29,12 +29,15 @@ body::after {
     transform: translate(-50%, -50%);
     color: black;
     font-size: 250px;
-    font-weight: bold;    
+    font-weight: bold;
+    opacity: 0.5;
 }
 
 
 .logo {
     width: 80px;
+    position: relative;
+    z-index: 2;
 }
 
 h4 {
@@ -50,7 +53,7 @@ p {
     margin-bottom: 40px;
 }
 
-.botao-carrinho{
+.botao-carrinho {
     background: #a3be52;
     padding: 10px 20px;
     border-radius: 20px;
@@ -60,53 +63,52 @@ p {
     transition: 0.5s;
 }
 
-.botao-carrinho:hover{
+.botao-carrinho:hover {
     opacity: 0.7;
 }
 
-.imagem-tenis{
+.imagem-tenis {
     width: 800px;
     transform: rotate(-25deg);
- 
+
 }
 
-.caixa-principal{
+.caixa-principal {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 75%;
+    position: relative;
+    z-index: 1;
 }
 
-.caixa-texto{
+.caixa-texto {
     max-width: 500px;
 
 }
 
+.caixa-botoes{
+    display: flex;    
+    gap: 20px;    
+    position: relative;
+    z-index: 2;
+}
 
-/* teste */
-.color-btn {
-    width: 40px;
-    height: 40px;
+.botoes {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    border: 2px solid #ddd;
-    margin: 10px 5px;
     cursor: pointer;
-    transition: transform 0.3s;
-  }
+}
 
-  .color-btn:hover {
-    transform: scale(1.1);
-    border-color: #666;
-  }
+.verde {
+    background: #ccee66;
+}
 
-  /* Cores dos botões */
-  .red { background-color: #c41e3a; }
-  .blue { background-color: #0067a5; }
-  .black { background-color: #2d2d2d; }
+.azul {
+    background: #58cced;
+}
 
-  /* Container dos botões */
-  .color-buttons {
-    margin-top: 15px;
-    display: flex;
-    gap: 8px;
-  }
+.rosa {
+    background: #ff9eb5;
+}
