@@ -7,4 +7,3 @@ body.style.backgroundColor = cor;
 tenis.src = imagem;
 botao.style.background = carrinho;
 }
-

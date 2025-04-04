@@ -112,3 +112,98 @@ p {
 .rosa {
     background: #ff9eb5;
 }
+
+
+/* ------------------------------ */
+/* 📱 Responsividade */
+/* Celular pequeno até 480px */
+@media (max-width: 480px) {
+    .caixa-texto h1 {
+        font-size: 1.8rem;
+    }
+
+    .caixa-texto p {
+        font-size: 0.9rem;
+    }
+
+    .botao-carrinho {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .botoes {
+        width: 40px;
+        height: 40px;
+    }
+
+    .caixa-imagem img.imagem-tenis {
+        max-width: 280px;
+    }
+}
+
+/* Celular médio até 576px */
+@media (max-width: 576px) {
+    .caixa-texto h1 {
+        font-size: 2rem;
+    }
+
+    .caixa-imagem img.imagem-tenis {
+        max-width: 320px;
+    }
+}
+
+/* Celular grande até 768px */
+@media (max-width: 768px) {
+    .caixa-principal {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .caixa-texto {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .caixa-botoes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .caixa-imagem img.imagem-tenis {
+        max-width: 360px;
+    }
+}
+
+/* Tablet retrato 768px a 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .caixa-texto h1 {
+        font-size: 3rem;
+    }
+
+    .caixa-texto p {
+        font-size: 1rem;
+    }
+
+    .caixa-imagem img.imagem-tenis {
+        max-width: 500px;
+    }
+
+    .caixa-botoes {
+        justify-content: flex-start;
+        padding-left: 40px;
+    }
+}
+
+/* Tablet paisagem 992px a 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .caixa-imagem img.imagem-tenis {
+        max-width: 600px;
+    }
+}
+
+/* Desktop 1200px+ */
+@media (min-width: 1200px) {
+    .caixa-imagem img.imagem-tenis {
+        max-width: 800px;
+    }
+}
