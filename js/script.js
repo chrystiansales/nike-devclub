@@ -5,5 +5,5 @@ let botao = document.querySelector(".botao-carrinho");
 function mudarVisual(cor, imagem, carrinho) {
 body.style.backgroundColor = cor;
 tenis.src = imagem;
-botao.style.background = carrinho;
+botao.style.background = cor;
 }
